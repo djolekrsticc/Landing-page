@@ -30,7 +30,7 @@ const Nav = () => {
                 <div className='flex justify-between items-center md:py-2'>
                     <div>
                         <a href="#">
-                            <h1 className='font-mono text-lg tracking-wide text-gray-900'>LandingPage</h1>
+                            <h1 className='font-mono text-3xl tracking-wide text-gray-900'>Theoretical</h1>
                         </a>
                     </div>
 

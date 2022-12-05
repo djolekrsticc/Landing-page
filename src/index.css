@@ -6,4 +6,12 @@
     .link-underline {
       @apply translate-y-0 after:block after:absolute after:w-full after:h-px after:transition ease-in-out delay-500 after:duration-200 after:scale-0 after:bg-gray-700 hover:after:scale-100;
     }
+
+    .services-arrow {
+      @apply flex items-center justify-center w-20 h-20 rounded-full cursor-pointer bg-primary-color hover:bg-primary-color-light active:bg-primary-color-light;
+    }
+
+    .services-arrow-small {
+      @apply services-arrow w-16 h-16 mx-3;
+    }
   }

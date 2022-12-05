@@ -1,17 +1,25 @@
 import {useState} from 'react'
 import {Sling as Hamburger, Sling} from 'hamburger-react'
 import {useSpring, animated} from '@react-spring/web'
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const items = [
     {
         name: "Work",
-        id: "work"
+        id: "work",
+        link: 'work'
+    }, {
+        name: "Our services",
+        id: "services",
+        link: 'services'
     }, {
         name: "About",
-        id: "about"
+        id: "about",
+        link: 'about'
     }, {
         name: "Lets chat",
-        id: "chat"
+        id: "chat",
+        link: 'chat'
     }
 ]
 
@@ -26,11 +34,11 @@ const Nav = () => {
 
     return (
         <nav className='container mx-auto'>
-            <div className="relative py-4 px-6 z-50 bg-white">
+            <div className="relative py-4 px-6 md:px-0 z-50 bg-white">
                 <div className='flex justify-between items-center md:py-2'>
                     <div>
                         <a href="#">
-                            <h1 className='font-mono text-3xl tracking-wide text-gray-900'>Theoretical</h1>
+                            <h1 className='font-mono text-2xl md:text-3xl tracking-wide text-gray-900'>Theoretical</h1>
                         </a>
                     </div>
 
@@ -44,35 +52,42 @@ const Nav = () => {
                     {/* md: */}
                     <div className='hidden md:flex'>
                         {
-                        items.map(item => <a key={
+                        items.map(item => <Link key={
                                 item.id
                             }
-                            href="#"
-                            className='my-3 mx-6'>
-                            <p className='font-mono text-gray-900 link-underline'>
+                            to={item.link}
+                            smooth={true}
+                            offset={50}
+                            duration= {500}
+                            className='my-3 mx-6 cursor-pointer'>
+                            <p className='font-sans text-gray-900 link-underline'>
                                 {
                                 item.name
                             }</p>
-                        </a>)
+                        </Link>)
                     } </div>
                 </div>
             </div>
 
-            <animated.div className={`container mx-auto absolute text-center w-full h-48 py-6 z-40 bg-white md:hidden`}
+            <animated.div className={`container mx-auto absolute text-center w-full h-60 py-6 z-40 bg-white md:hidden`}
                 style={slide}>
                 {
-                items.map(item => <a key={
+                items.map(item => <Link key={
                         item.id
                     }
-                    href="#">
+                    to={item.link}
+                    smooth={true}
+                    offset={50}
+                    duration= {500}
+                    className='cursor-pointer'>
                     <p onClick={
                             () => setOpen(!isOpen)
                         }
-                        className='font-mono text-gray-900 py-3 px-6 active:bg-blue-100'>
+                        className='font-sans text-gray-900 py-3 px-6 active:bg-blue-100'>
                         {
                         item.name
                     }</p>
-                </a>)
+                </Link>)
             } </animated.div>
         </nav>
     )

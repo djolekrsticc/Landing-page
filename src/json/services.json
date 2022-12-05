@@ -1,0 +1,67 @@
+[
+    {   
+        "gif": "../public/email.gif",
+        "png": "../public/email.png",
+        "name": "Email Marketing",
+        "paragraph": "Lorem ipsum dolor sit amet consecte adipiscing elit faucibus",
+        "id": "0",
+        "link": "emailLink"
+    }, {   
+        "gif": "../public/promote.gif",
+        "png": "../public/promote.png",
+        "name": "Paid Advertising",
+        "paragraph": "Lorem ipsum dolor sit amet consecte adipiscing elit faucibus",
+        "id": "1",
+        "link": "advertisingLink"
+    }, {   
+        "gif": "../public/search.gif",
+        "png": "../public/search.png",
+        "name": "SEO",
+        "paragraph": "Lorem ipsum dolor sit amet consecte adipiscing elit faucibus",
+        "id": "2",
+        "link": "seoLink"
+    }, {   
+        "gif": "../public/line-chart.gif",
+        "png": "../public/line-chart.png",
+        "name": "Advanced Analytics",
+        "paragraph": "Lorem ipsum dolor sit amet consecte adipiscing elit faucibus",
+        "id": "3",
+        "link": "analyticsLink"
+    }, {   
+        "gif": "../public/video-player.gif",
+        "png": "../public/video-player.png",
+        "name": "Content Marketing",
+        "paragraph": "Lorem ipsum dolor sit amet consecte adipiscing elit faucibus",
+        "id": "4",
+        "link": "contentLink"
+    }, {   
+        "gif": "../public/funnel.gif",
+        "png": "../public/funnel.png",
+        "name": "Funnel Optimization",
+        "paragraph": "Lorem ipsum dolor sit amet consecte adipiscing elit faucibus",
+        "id": "5",
+        "link": "funnelLink"
+    }, {   
+        "gif": "../public/email.gif",
+        "png": "../public/email.png",
+        "name": "Email Marketing",
+        "paragraph": "Lorem ipsum dolor sit amet consecte adipiscing elit faucibus",
+        "id": "6",
+        "link": "emailLink"
+    }, {   
+        "gif": "../public/promote.gif",
+        "png": "../public/promote.png",
+        "name": "Paid Advertising",
+        "paragraph": "Lorem ipsum dolor sit amet consecte adipiscing elit faucibus",
+        "id": "7",
+        "link": "advertisingLink"
+    }, {   
+        "gif": "../public/search.gif",
+        "png": "../public/search.png",
+        "name": "SEO",
+        "paragraph": "Lorem ipsum dolor sit amet consecte adipiscing elit faucibus",
+        "id": "8",
+        "link": "seoLink"
+    }
+
+]

@@ -1,4 +1,5 @@
-import {useState} from "react";
+import { useSpring, animated } from "@react-spring/web";
+import {useEffect, useRef, useState} from "react";
 import {HiArrowLeft} from "react-icons/hi2";
 import {HiArrowRight} from "react-icons/hi2";
 import services from "../json/services.json";
@@ -6,10 +7,15 @@ import services from "../json/services.json";
 const Services = () => {
     let [id, setId] = useState(0);
 
+    useEffect(() => {
+        const element = document.getElementById(id);
+        element.scrollIntoView({ behavior: "smooth", inline: "center" });
+      }, [id]);
+
     return (
         <section id="services">
-            <div className="container mx-auto py-20 md:py-28">
-                <div className="flex flex-row items-end justify-between">
+            <div className="py-20 md:py-28">
+                <div className="container mx-auto flex flex-row items-end justify-between">
                     <div className="w-full mx-7 md:w-5/12 md:mr-10">
                         <div className="flex flex-row items-center my-5 md:my-0">
                             <div className="w-8 md:w-14 h-0.5 bg-slate-800"></div>
@@ -22,24 +28,25 @@ const Services = () => {
                     </div>
 
                     <div className="hidden md:flex flex-row items-center justify-evenly w-2/12">
-                        <div onClick={
-                                () => setId(id-=1)
-                            }
+                        <div onClick={() => {
+                            setId(id-1);
+                            
+                        }}
                             className="services-arrow">
                             <HiArrowLeft className="w-12 h-12 text-white"/>
                         </div>
 
-                        <div onClick={
-                                () => setId(id+=1)
-                            }
+                        <div onClick={() => {
+                            setId(id+1);
+                            
+                        }}
                             className="services-arrow">
                             <HiArrowRight className="w-12 h-12 text-white"/>
                         </div>
                     </div>
                 </div>
 
-            <div className="container ml-auto flex flex-col justify-center items-start overflow-y-visible overflow-x-hidden">
-
+            <div className="flex flex-col justify-center items-start overflow-y-visible overflow-x-hidden">
                 <div className="py-12 md:py-20 mx-7 md:mx-0">
                     <div className="flex flex-row items-center justify-between gap-x-12 md:gap-x-5">
                         {
@@ -67,23 +74,26 @@ const Services = () => {
                     } </div>
                 </div>
 
-                <div className="flex md:hidden flex-row items-center justify-center w-full">
-                        <div onClick={
-                                () => setId(id-=1)
-                            }
+            </div>
+            <div className="flex md:hidden flex-row items-center justify-center w-full">
+                        <div onClick={() => {
+                            setId(id-1);
+                            
+                        }}
                             className="services-arrow-small">
                             <HiArrowLeft className="w-8 h-8 text-white"/>
                         </div>
 
-                        <div onClick={
-                                () => setId(id+=1)
-                            }
+                        <div onClick={() => {
+                            setId(id+1);
+                            
+                            
+                        }}
                             className="services-arrow-small">
                             <HiArrowRight className="w-8 h-8 text-white"/>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
     )
 }

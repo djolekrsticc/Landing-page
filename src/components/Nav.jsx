@@ -1,35 +1,22 @@
 import {useState} from 'react'
-import {Sling as Hamburger, Sling} from 'hamburger-react'
+import {Sling} from 'hamburger-react'
 import {useSpring, animated} from '@react-spring/web'
-import { Link, animateScroll as scroll } from "react-scroll";
-
-const items = [
-    {
-        name: "Work",
-        id: "work",
-        link: 'work'
-    }, {
-        name: "Our services",
-        id: "services",
-        link: 'services'
-    }, {
-        name: "About",
-        id: "about",
-        link: 'about'
-    }, {
-        name: "Lets chat",
-        id: "chat",
-        link: 'chat'
-    }
-]
+import {Link} from "react-scroll";
+import {HiChevronDown} from "react-icons/hi2";
+import items from '../json/nav.json';
 
 const Nav = () => {
     const [isOpen, setOpen] = useState(false)
+    const [isShown, setIsShown] = useState(false);
 
     const slide = useSpring({
         display: isOpen ? "block" : "none",
         opacity: isOpen ? 1 : 0,
         top: isOpen ? 80 : -240
+    })
+
+    const pagesStyle = useSpring({
+        transform: isShown ? 'rotate(-180deg)' : 'rotate(0deg)'
     })
 
     return (
@@ -55,38 +42,66 @@ const Nav = () => {
                         items.map(item => <Link key={
                                 item.id
                             }
-                            to={item.link}
+                            to={
+                                item.link
+                            }
                             smooth={true}
                             offset={50}
-                            duration= {500}
-                            className='my-3 mx-6 cursor-pointer'>
-                            <p className='font-sans text-gray-900 link-underline'>
+                            duration={500}
+                            className='flex flex-row items-end my-3 mx-6 cursor-pointer link-underline'>
+                            {
+                            item.id == "pages" ? <div className='flex flex-row items-center'
+                                onMouseEnter={
+                                    () => setIsShown(true)
+                                }
+                                onMouseLeave={
+                                    () => setIsShown(false)
+                            }>
+                                <p className='font-sans text-gray-900'>
+                                    {
+                                    item.name
+                                } </p>
                                 {
-                                item.name
-                            }</p>
-                        </Link>)
+                                < animated.div style = {
+                                    pagesStyle
+                                }
+                                className = 'ml-2' > <HiChevronDown/></animated.div>
+                            } </div> : <div className='flex flex-row items-center'>
+                                <p className='font-sans text-gray-900'>
+                                    {
+                                    item.name
+                                } </p>
+                            </div>
+                        } </Link>)
                     } </div>
                 </div>
             </div>
 
-            <animated.div className={`container mx-auto absolute text-center w-full h-60 py-6 z-40 bg-white md:hidden`}
+            <animated.div className={`container mx-auto absolute text-center w-full h-72 py-6 z-40 bg-white md:hidden`}
                 style={slide}>
                 {
                 items.map(item => <Link key={
                         item.id
                     }
-                    to={item.link}
+                    to={
+                        item.link
+                    }
                     smooth={true}
                     offset={50}
-                    duration= {500}
+                    duration={500}
                     className='cursor-pointer'>
-                    <p onClick={
+                    <div onClick={
                             () => setOpen(!isOpen)
                         }
-                        className='font-sans text-gray-900 py-3 px-6 active:bg-blue-100'>
+                        className='flex flex-row justify-center items-center active:bg-blue-100'>
+                        <p className='font-sans text-gray-900 py-3'>
+                            {
+                            item.name
+                        }</p>
                         {
-                        item.name
-                    }</p>
+                        item.id == "pages" ? <animated.div style={pagesStyle}
+                            className='ml-2'><HiChevronDown/></animated.div> : ''
+                    } </div>
                 </Link>)
             } </animated.div>
         </nav>

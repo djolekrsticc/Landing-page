@@ -1,67 +1,45 @@
 [
     {   
-        "gif": "/email.gif",
+        "gif": "/email.mp4",
         "png": "/email.png",
         "name": "Email Marketing",
         "paragraph": "Lorem ipsum dolor sit amet consecte adipiscing elit faucibus",
         "id": "0",
         "link": "emailLink"
     }, {   
-        "gif": "/promote.gif",
+        "gif": "/promote.mp4",
         "png": "/promote.png",
         "name": "Paid Advertising",
         "paragraph": "Lorem ipsum dolor sit amet consecte adipiscing elit faucibus",
         "id": "1",
         "link": "advertisingLink"
     }, {   
-        "gif": "/search.gif",
+        "gif": "/search.mp4",
         "png": "/search.png",
         "name": "SEO",
         "paragraph": "Lorem ipsum dolor sit amet consecte adipiscing elit faucibus",
         "id": "2",
         "link": "seoLink"
     }, {   
-        "gif": "/line-chart.gif",
+        "gif": "/line-chart.mp4",
         "png": "/line-chart.png",
         "name": "Advanced Analytics",
         "paragraph": "Lorem ipsum dolor sit amet consecte adipiscing elit faucibus",
         "id": "3",
         "link": "analyticsLink"
     }, {   
-        "gif": "/video-player.gif",
+        "gif": "/video-player.mp4",
         "png": "/video-player.png",
         "name": "Content Marketing",
         "paragraph": "Lorem ipsum dolor sit amet consecte adipiscing elit faucibus",
         "id": "4",
         "link": "contentLink"
     }, {   
-        "gif": "/funnel.gif",
+        "gif": "/funnel.mp4",
         "png": "/funnel.png",
         "name": "Funnel Optimization",
         "paragraph": "Lorem ipsum dolor sit amet consecte adipiscing elit faucibus",
         "id": "5",
         "link": "funnelLink"
-    }, {   
-        "gif": "/email.gif",
-        "png": "/email.png",
-        "name": "Email Marketing",
-        "paragraph": "Lorem ipsum dolor sit amet consecte adipiscing elit faucibus",
-        "id": "6",
-        "link": "emailLink"
-    }, {   
-        "gif": "/promote.gif",
-        "png": "/promote.png",
-        "name": "Paid Advertising",
-        "paragraph": "Lorem ipsum dolor sit amet consecte adipiscing elit faucibus",
-        "id": "7",
-        "link": "advertisingLink"
-    }, {   
-        "gif": "/search.gif",
-        "png": "/search.png",
-        "name": "SEO",
-        "paragraph": "Lorem ipsum dolor sit amet consecte adipiscing elit faucibus",
-        "id": "8",
-        "link": "seoLink"
     }
-
 ]

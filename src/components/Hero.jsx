@@ -1,5 +1,5 @@
 import { HiArrowRight } from "react-icons/hi2";
-import heroImg from "/hero.png";
+import heroImg from "/hero.svg";
 import { Link } from "react-scroll";
 
 const Hero = () => {

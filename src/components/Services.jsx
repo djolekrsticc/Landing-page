@@ -7,7 +7,7 @@ const Services = () => {
 
     useEffect(() => {
         const element = document.getElementById(id);
-        element.scrollIntoView({behavior: "smooth", inline: "center"});
+        element.scrollIntoView({behavior: "smooth", inline: "center", block: "nearest"});
     });
 
     return (
@@ -79,16 +79,9 @@ const Services = () => {
                                             alt={
                                                 service.name
                                             }/>
-                                        <img className="md:hidden md:group-hover:flex"
-                                            style={
-                                                {width: '130px'}
-                                            }
-                                            src={
-                                                service.gif
-                                            }
-                                            alt={
-                                                service.name
-                                            }/>
+                                             <video className="md:hidden md:group-hover:flex" width="130" autoPlay muted loop>
+                                                <source src={service.gif} type="video/mp4"/>
+                                            </video> 
                                     </div>
 
                                     <div className="m-7">

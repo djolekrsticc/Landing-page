@@ -1,15 +1,14 @@
 import {useEffect, useState} from "react";
-import {HiArrowLeft} from "react-icons/hi2";
-import {HiArrowRight} from "react-icons/hi2";
+import {HiArrowLeft, HiArrowRight} from "react-icons/hi2";
 import services from "../json/services.json";
 
 const Services = () => {
-    let [id, setId] = useState(0);
+    const [id, setId] = useState(-1);
 
     useEffect(() => {
         const element = document.getElementById(id);
         element.scrollIntoView({behavior: "smooth", inline: "center"});
-    }, [id]);
+    });
 
     return (
         <section id="services">
@@ -31,8 +30,6 @@ const Services = () => {
                                 () => {
                                     if (id != 0) {
                                         setId(id - 1);
-                                    } else {
-                                        id = id
                                     }
                                 }
                             }
@@ -43,9 +40,11 @@ const Services = () => {
                         <div onClick={
                                 () => {
                                     if (id != services.length - 1) {
-                                        setId(id + 1);
-                                    } else {
-                                        id = id
+                                        if (id == "-1") {
+                                            setId(id + 2);
+                                        } else {
+                                            setId(id + 1);
+                                        }
                                     }
                                 }
                             }
@@ -63,13 +62,13 @@ const Services = () => {
                                     service.id
                                 }
                                 href={
-                                    service.id
+                                    service.link
                                 }
                                 id={
                                     service.id
                             }>
-                                <div className="w-80 h-96 md:w-112 md:h-128 bg-white border border-slate-500 rounded-3xl group">
-                                    <div>
+                                <div className="w-80 h-96 md:w-96 md:h-128 bg-white border border-slate-500 rounded-3xl group md:hover:scale-105">
+                                    <div className="my-9 mx-7">
                                         <img className="hidden md:flex md:group-hover:hidden"
                                             style={
                                                 {width: '95px'}
@@ -80,7 +79,7 @@ const Services = () => {
                                             alt={
                                                 service.name
                                             }/>
-                                        <img className="md:hidden md:group-hover:flex my-7 mx-7"
+                                        <img className="md:hidden md:group-hover:flex"
                                             style={
                                                 {width: '130px'}
                                             }
@@ -92,11 +91,26 @@ const Services = () => {
                                             }/>
                                     </div>
 
-                                    <div></div>
+                                    <div className="m-7">
+                                        <div>
+                                            <h3 className="font-bold text-gray-800 text-2xl">
+                                                {
+                                                service.name
+                                            }</h3>
+                                        </div>
 
-                                    <div></div>
+                                        <div className="pt-3 pb-8">
+                                            <p className="font-normal text-xs leading-5 text-slate-600 text-left w-10/12">
+                                                {
+                                                service.paragraph
+                                            }</p>
+                                        </div>
 
-                                    <div></div>
+                                        <div className="flex flex-row items-center">
+                                            <p className="flex flex-row justify-start items-center pr-3">Learn more</p>
+                                            <HiArrowRight/>
+                                        </div>
+                                    </div>
                                 </div>
                             </a>)
                         } </div>
@@ -108,8 +122,6 @@ const Services = () => {
                             () => {
                                 if (id != 0) {
                                     setId(id - 1);
-                                } else {
-                                    id = id
                                 }
                             }
                         }
@@ -120,9 +132,11 @@ const Services = () => {
                     <div onClick={
                             () => {
                                 if (id != services.length - 1) {
-                                    setId(id + 1);
-                                } else {
-                                    id = id
+                                    if (id == "-1") {
+                                        setId(id + 2);
+                                    } else {
+                                        setId(id + 1);
+                                    }
                                 }
                             }
                         }

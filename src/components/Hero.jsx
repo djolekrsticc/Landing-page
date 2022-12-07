@@ -1,5 +1,6 @@
 import { HiArrowRight } from "react-icons/hi2";
 import heroImg from "/hero.png";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -24,18 +25,18 @@ const Hero = () => {
                 </div>
 
                 <div className="flex flex-row items-center my-9">
-                    <a href="">
-                        <div className="flex flex-row items-center mr-5 py-4 md:py-5 px-5 bg-primary-color hover:bg-primary-color-light active:bg-primary-color-light rounded-full">
+                    <Link to="test1" smooth={true} offset={50} duration={500}>
+                        <div className="flex flex-row items-center mr-5 py-4 md:py-5 px-5 bg-primary-color hover:bg-primary-color-light active:bg-primary-color-light rounded-full cursor-pointer">
                             <p className="text-white mr-3">Get in touch</p>
                             <HiArrowRight className="w-4 h-4 text-white" />
                         </div>
-                    </a>
+                    </Link>
 
-                    <a href="">
-                        <div className="flex flex-row items-center justify-center py-4 md:py-5 px-4 bg-white hover:bg-slate-800 active:bg-slate-800 rounded-full border border-slate-800 group">
+                    <Link to="services" smooth={true} offset={50} duration={500}>
+                        <div className="flex flex-row items-center justify-center py-4 md:py-5 px-4 bg-white hover:bg-slate-800 active:bg-slate-800 rounded-full border border-slate-800 group cursor-pointer">
                             <p className=" text-slate-800 group-hover:text-white group-active:text-white">Our services</p>
                         </div>
-                    </a>
+                    </Link>
                 </div>
             </div>
 

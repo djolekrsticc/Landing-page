@@ -12,10 +12,8 @@ const About = () => {
                     </div>
 
                     <div className="md:my-9">
-                        <h1 className="font-medium text-3xl lg:text-5xl text-slate-800 leading-tight">The great team of<br/>industry experts<br/>behind
-                            <span className="underline underline-offset-3">
-                                <a href="#">Theoretical</a>
-                            </span>
+                        <h1 className="font-medium text-3xl lg:text-5xl text-slate-800 leading-tight">
+                            The great team of<br/>industry experts<br/>behind <span className="underline underline-offset-3">Theoretical</span>
                         </h1>
                     </div>
                 </div>

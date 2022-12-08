@@ -1,7 +1,7 @@
 import {HiArrowRight} from "react-icons/hi2";
 import aboutImg from "/about.svg";
 
-const About = () => {
+export const About = () => {
     return (
         <section className="container mx-auto" id="about">
             <div className="flex flex-col mx-7 justify-between items-center py-5 md:py-20">
@@ -36,5 +36,3 @@ const About = () => {
         </section>
     )
 }
-
-export default About;

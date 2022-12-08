@@ -2,7 +2,7 @@ import { HiArrowRight } from "react-icons/hi2";
 import heroImg from "/hero.svg";
 import { Link } from "react-scroll";
 
-const Hero = () => {
+export const Hero = () => {
   return (
     <section className="container mx-auto">
         <div className="flex flex-row justify-between items-center py-5 md:py-20">
@@ -47,5 +47,3 @@ const Hero = () => {
     </section>
   )
 }
-
-export default Hero;

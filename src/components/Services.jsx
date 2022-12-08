@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import {HiArrowLeft, HiArrowRight} from "react-icons/hi2";
 import services from "../json/services.json";
 
-const Services = () => {
+export const Services = () => {
     const [id, setId] = useState(-1);
 
     useEffect(() => {
@@ -12,7 +12,7 @@ const Services = () => {
 
     return (
         <section id="services">
-            <div className="py-20 md:py-28">
+            <div className="my-20 md:my-28">
                 <div className="container mx-auto flex flex-row items-end justify-between">
                     <div className="w-full mx-7 md:w-5/12 md:mr-10">
                         <div className="flex flex-row items-center my-5 md:my-0">
@@ -141,5 +141,3 @@ const Services = () => {
         </section>
     )
 }
-
-export default Services;

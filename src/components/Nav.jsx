@@ -5,7 +5,7 @@ import {Link} from "react-scroll";
 import {HiChevronDown} from "react-icons/hi2";
 import items from '../json/nav.json';
 
-const Nav = () => {
+export const Nav = () => {
     const [isOpen, setOpen] = useState(false)
     const [isShown, setIsShown] = useState(false);
 
@@ -46,7 +46,7 @@ const Nav = () => {
                                 item.link
                             }
                             smooth={true}
-                            offset={50}
+                            offset={70}
                             duration={500}
                             className='flex flex-row items-end my-3 mx-6 cursor-pointer link-underline'>
                             {
@@ -87,7 +87,7 @@ const Nav = () => {
                         item.link
                     }
                     smooth={true}
-                    offset={50}
+                    offset={-70}
                     duration={500}
                     className='cursor-pointer'>
                     <div onClick={
@@ -107,5 +107,3 @@ const Nav = () => {
         </nav>
     )
 }
-
-export default Nav

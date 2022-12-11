@@ -1,0 +1,21 @@
+[
+    {
+        "img": "/process-1.svg",
+        "id": "101",
+        "header": "1. Marketing Plan",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus venenatis pulvinar. Vivamus quis leo quam. Vivamus viverra nisi sed eleifend pharetra. Curabitur commodo enim eros, in ultrices elit lacinia ac. Morbi auctor velit a odio ultrices efficitur et sit amet metus. Aliquam tristique vel enim non placerat.",
+        "color": "#67d0dc"
+        }, {
+        "img": "/process-2.svg",
+        "id": "102",
+        "header": "2. Execution",
+        "paragraph": "Morbi sit amet mauris magna. Aliquam consequat ultrices lectus accumsan varius. Proin iaculis suscipit tristique. Mauris vitae pretium ligula. Morbi dignissim massa nisl. Praesent pretium at sem et eleifend. Cras at risus eget lacus luctus tincidunt. Donec blandit laoreet nulla, sed ultrices ex malesuada vulputate. ",
+        "color": "#1e293b"
+        }, {
+        "img": "/process-3.svg",
+        "id": "103",
+        "header": "3. Growth & Scale",
+        "paragraph": "Nullam convallis felis ligula, ut auctor enim mollis a. Donec convallis velit in ligula tristique, sed sagittis orci cursus. Maecenas elementum lacus mauris, id tempus nibh ultrices eget. Nullam ut ex felis. Vivamus varius lorem nulla, ac accumsan erat ultricies nec. Morbi aliquam, leo et ultrices imperdiet, nisi sem porta dui. ",
+        "color": "#f47458"
+    }
+]

@@ -1,19 +1,9 @@
-import { Nav } from "./components/Nav"
-import { Hero } from "./components/Hero";
-import { Services } from "./components/Services";
-import { About } from "./components/About";
-import { Contact } from "./components/Contact";
+import { Pages } from "./pages/Pages"
 
-function App() {
-  return (
-    <>
-      <Nav />
-      <Hero />
-      <Services />
-      <About />
-      <Contact />
-    </>
-  )
+export const App = () => {
+    return (
+        <>
+            <Pages />
+        </>
+    )
 }
-
-export default App;

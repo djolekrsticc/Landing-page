@@ -14,4 +14,8 @@
     .services-arrow-small {
       @apply services-arrow w-16 h-16 mx-3;
     }
+
+    .services-arrow-small-process {
+      @apply flex items-center justify-center w-16 h-16 mx-3 rounded-full cursor-pointer;
+    }
   }

@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 export const Hero = () => {
   return (
     <section className="container mx-auto">
-        <div className="flex flex-row justify-between items-center py-5 md:py-20">
+        <div className="flex flex-row justify-between items-center mt-5 md:mt-20">
             <div className="w-full mx-7 md:w-5/12 md:mr-10">
                 <div className="flex flex-row items-center my-5 md:my-0">
                     <div className="w-8 md:w-14 h-0.5 bg-slate-800"></div>
@@ -24,7 +24,7 @@ export const Hero = () => {
                     <p className="font-normal text-xs leading-6 text-slate-600 text-left w-11/12 md:w-8/12">Lorem ipsum dolor sit amet consectetur adipiscing elit faucibus ante velit nunc morbi pretium ut nullam dolor pulvinar proin viverra ullamcorper aceget.</p>
                 </div>
 
-                <div className="flex flex-row items-center my-9">
+                <div className="flex flex-row items-center mt-9">
                     <Link to="test1" smooth={true} offset={50} duration={500}>
                         <div className="flex flex-row items-center mr-5 py-4 md:py-5 px-5 bg-primary-color hover:bg-primary-color-light active:bg-primary-color-light rounded-full cursor-pointer">
                             <p className="text-white mr-3">Get in touch</p>

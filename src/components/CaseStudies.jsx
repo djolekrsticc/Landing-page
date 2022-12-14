@@ -6,7 +6,7 @@ export const CaseStudies = () => {
     
   return (
     <section className="container mx-auto" id="caseStudies">
-            <div className="flex flex-col mx-7 justify-between items-center py-5 my-20 md:my-28">
+            <div className="flex flex-col mx-7 justify-between items-center mt-28 md:mt-28">
                 <div className="w-full md:w-5/12 md:mr-10">
                     <div className="flex flex-row items-center my-5 md:my-0">
                         <div className="w-8 md:w-14 h-0.5 bg-slate-800"></div>

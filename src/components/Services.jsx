@@ -12,7 +12,7 @@ export const Services = () => {
 
     return (
         <section id="services">
-            <div className="my-20 md:my-28">
+            <div className="mt-28 md:mt-28">
                 <div className="container mx-auto flex flex-row items-end justify-between">
                     <div className="w-full mx-7 md:w-5/12 md:mr-10">
                         <div className="flex flex-row items-center my-5 md:my-0">
@@ -28,7 +28,7 @@ export const Services = () => {
                     <div className="hidden md:flex flex-row items-center justify-evenly w-2/12">
                         <div onClick={
                                 () => {
-                                    if (id != 0) {
+                                    if (id > 0) {
                                         setId(id - 1);
                                     }
                                 }
@@ -113,7 +113,7 @@ export const Services = () => {
                 <div className="flex md:hidden flex-row items-center justify-center w-full">
                     <div onClick={
                             () => {
-                                if (id != 0) {
+                                if (id > 0) {
                                     setId(id - 1);
                                 }
                             }

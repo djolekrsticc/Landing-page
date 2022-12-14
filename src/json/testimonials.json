@@ -1,0 +1,24 @@
+[
+    {
+        "name": "John Carter",
+        "title": "Head of marketing",
+        "header": "Theoretical agency helped us to reach our ambitious marketing goals",
+        "paragraph": "Nullam in lacus purus. Ut mollis neque ut euismod dictum. Nam facilisis mi quis nunc tincidunt placerat vel nec ex. Pellentesque lobortis nunc vel condimentum mattis. Donec at tristique lorem. Sed imperdiet enim a congue tempus.",
+        "img": "/avatar1.svg",
+        "id": "1000"
+    }, {
+        "name": "Sophie Moore",
+        "title": "VP of marketing",
+        "header": "Theoretical agency helped us to have simply impressive results this year",
+        "paragraph": "Pellentesque diam dolor, laoreet quis convallis dictum, dapibus eget elit. Donec facilisis sapien eget eros consectetur convallis. Nulla eros velit, cursus nec tempor in, pulvinar in augue. Proin interdum purus ut neque placerat.",
+        "img": "/avatar2.svg",
+        "id": "1001"
+    }, {
+        "name": "Kelly Smith",
+        "title": "Growth marketer",
+        "header": "Theoretical agency helped us to increase our retention by 300% in one month",
+        "paragraph": "Vivamus congue sit amet libero eu elementum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis quis sapien metus. Ut scelerisque, neque a auctor consectetur, mauris metus iaculis ex.",
+        "img": "/avatar3.svg",
+        "id": "1002"
+    }
+]

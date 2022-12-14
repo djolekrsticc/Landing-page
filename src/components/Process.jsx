@@ -32,7 +32,7 @@ export const Process = () => {
 
     return (
         <section className="container mx-auto">
-        <div className="flex flex-col mx-7 justify-between items-center py-5 md:py-20">
+        <div className="flex flex-col mx-7 justify-between items-center mt-28 md:py-28">
             <div className="w-full md:w-5/12 md:mr-10">
             <div className="flex flex-row items-center my-5 md:my-0">
                 <animated.div style={bgStyle} className="w-8 md:w-14 h-0.5"></animated.div>
@@ -46,7 +46,7 @@ export const Process = () => {
             </div>
             </div>
             <div className="flex flex-col justify-center items-center my-9 mx-auto">
-                <animated.div style={bgStyle} className="flex flex-col justify-start items-center w-full h-128 mx-7 py-12 md:py-20 rounded-2xl">
+                <animated.div style={bgStyle} className="flex flex-col justify-start items-center w-full h-128 mx-7 py-12 md:py-20 rounded-3xl">
                     <animated.div style={style} className="px-6">
                         <div>
                             <img src={process[idProcess].img} alt="header" />  
